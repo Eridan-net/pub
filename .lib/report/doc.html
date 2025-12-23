@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<html><head><script src="/lib/SaxonJS2.rt.js"></script>
+<script>
+function load(src, sef, param) {
+	fetch(src)
+		.then(t => transformText(t.text(), sef, param))
+		.then(doc => replace(doc))
+	}
+function transformText(doc, sef, param) {
+	fetch(sef, {mode: 'cors'})
+		.then(f => f.text())
+		.then(t => SaxonJS.transform( 
+			{ sourceText: doc, stylesheetText: t
+			, destination: 'serialized' }
+			, 'sync')
+			)
+		.then(r => r.principalResult)
+	}
+
+function replace(doc) {
+	document.open("text/html", "replace");
+	document.write(doc);
+	document.close();
+	}
+window.onerror= (er) => { alert(er) }
+window.onload= () => { load('doc.xml', 'doc.sef.json', 1) }
+</script></head>
+<body></body></html>

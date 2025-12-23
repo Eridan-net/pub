@@ -1,0 +1,56 @@
+
+@import "gui.css";
+
+body { background: white; scrollbar-width: thin }
+
+body[frame='yes'] { background: transparent; 
+	margin: 0; overflow-y: clip;
+	}
+heading { display: block; background: mintcream; padding: 2px }
+heading > * { display: block; }
+heading[index='top'] > * { display: inline; }
+heading[index='top'] > label { font: 10pt verdana; color: blue }
+heading[index='top'] > index > * { display: inline; margin: 0 20px }
+heading[index='list'] > index > * { display: list-item; }
+heading[index='list'] > index { padding-left: 24px }
+heading[index='list'] { padding: 4px 12px; border: 1px solid silver }
+
+heading > label { cursor: pointer }
+index > *:not(p) { cursor: pointer }
+
+index *[state='ready'] { background: transparent }
+index *[state='active'] { background: white; text-decoration: underline }
+
+topics { display: block; }
+topics > topic { position: relative; display: block; }
+topic > * { display: inline-block; vertical-align: top }
+
+p > anchor { font-weight: bold; color: navy }
+p > topic { font-weight: bold; color: navy; cursor: pointer; display: inline }
+
+img.map { z-index: 2; position: relative }
+anchors { z-index: 3; position: absolute; left: 0 }
+anchors > anchor { position: absolute; 
+	border: 1px solid gold; width: 80px; height: 10px; 
+	}
+anchor { cursor: pointer; display: inline; }
+
+anchor[state='active'] { background: transparent; color: blue }
+
+iframe[state='max'] { z-index: 1; position: relative; 
+	margin-top:-160px; /* to be overriden locally */
+	}
+view { display: block; position: relative; border-top: 1px solid;
+	margin-top: 160px; /* to be overriden locally */
+	}
+/* * */
+inset { display: inline-flex; flex-direction: column;
+	justify-content: center; border: 2px inset beige; 
+	align-content: center; background: ivory;
+	align-items: center;
+	}
+hover { position: relative }
+hover > help { position: absolute; display: none }
+
+filler { display: block }
+filler.menu { height: 148px; }

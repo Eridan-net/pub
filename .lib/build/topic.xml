@@ -1,0 +1,5 @@
+
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/lib/topic.xsl"?>
+<topic src="France XV/guide.xml" select="0">
+<script src="/lib/load.js" using="/lib/SaxonJS2.rt.js"></script>
+<transform xsl="/lib/guide.sef.json" call="loadText"></transform></topic>

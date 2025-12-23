@@ -1,0 +1,20 @@
+
+*[state='on'] { display: inline-block;  }
+*[state='off'] { display: none !important }
+
+p { margin: 8px 0 0 0; font: 10pt verdana }
+
+iframe { border: 0 }
+
+table { border-collapse: collapse }
+em { font: italic 11pt times }
+div.list > * { display: list-item; list-style: inside circle }
+div > item { margin-top: 12px; }
+
+sequence { position: relative }
+handle > * { cursor: pointer; background: transparent }
+
+tab { display: block; }
+tab > * { display: inline-block; vertical-align: top }
+.tab > * { display: inline-block; vertical-align: top }
+

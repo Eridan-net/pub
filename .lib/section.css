@@ -1,0 +1,57 @@
+
+@import "/lib/gui.css";
+
+body { font-family: verdana; padding-left: 8px; background: white; }
+title { display: inline-block;
+    font: 12pt times; text-decoration: underline; margin-left: 20px;
+    }
+body > title { font: bold 16pt times; color: silver;
+    text-decoration: none; margin: 0; vertical-align: top;
+    }
+sequence > index { display: inline-block; margin: 0 40px 4px; width: 720px;
+    & > label { display: inline-block; margin: 1px 20px; padding: 2px 6px;
+        font: 12pt verdana; 
+        }
+    }
+label[state='ready'] { border: 2px outset silver; cursor: pointer }
+label[state='active'] { border: 2px groove silver; font-weight: bold; color: navy; }
+
+topics { display: block }
+section { margin-top: 12px;
+    & > index { display: inline-block; background: ivory;
+    	border-bottom: 1px solid silver; margin-right: 40px; width: 1080px;
+        & > topic { display: list-item inline;
+            list-style: decimal inside;
+        	margin: 2px 12px; cursor: pointer;
+        	}
+    	}
+    & > index.leaf { background: transparent; border: 1px solid cyan; 
+        width: 640px; margin-top: 12px;
+        & > topic { color: silver; font: 11pt arial; list-style: none }
+        }
+    }
+topic[state='active'] { 
+    color: navy !important;
+    font-weight: bold !important;
+    }
+zoom { color: black; font-weight: normal; font-size: 16pt; display: inline }
+
+section.tab { position: relative;
+    & > title { position: absolute; }
+    & > index { width: 240px; border: 1px solid silver; margin-top: 32px;
+        & > topic { display: list-item; margin: 8px }
+        }
+    & > topics { width: 860px;
+        & > section { width: 860px; margin-top:0; }
+        }
+    }
+topics.leaf > section { margin-top: 4px;
+    & > title { display: none; }
+    }
+/* * */
+item { display: list-item; list-style: disc inside; font: 11pt verdana; 
+    margin-top: 8px }
+div.item > p { margin-left: 12px; }
+desc { display: inline-block; margin-left: 12px; width: 900px }
+inset { display: inline-block; margin: 8px 20px; width: 800px; padding: 4px 8px; border: 2px inset beige; }
+th { font: 10pt times }

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--xml-stylesheet type="text/xsl" href="/voyages/{lib}/guide.xsl" -->
+<guide title="Vaucluse">
+  <heading index="top">Overview</heading>
+  <topics>
+    <intro>
+      <div style="position: relative">
+        <img src="map.jpg" height="480"/>
+      </div>
+      <div style="width: 480px; margin: 8px">
+        <index>
+          <p>Au coeur de la <topic>Provence</topic>, le Vaucluse s'étend au sud de la Drôme, à l'ouest des Alpes de Haute-Provence, jusqu'au confluent du Rhône et de la <topic>Durance</topic>, occupé par <topic>Avignon</topic>.</p>
+          <p>Le Mont Ventoux sépare le nord du Vaucluse de la Drôme. Le massif du <topic>Lubéron</topic> longe la rive droite de la Durance au sud. L'extrémité sud-est du département correspond au confluent du Verdon et de la Durance.</p>
+          <p>Le territoire de Valreas fait partie d'une enclave du Vaucluse au sein de la Drôme.</p>
+          <p>Les crus les plus prestigieux des Côtes du Rhône méridionales (rive gauche) proviennent des <topic>vignobles </topic>qui occupent les coteaux des vallées des rivières qui affluent dans le Rhône autour d'Orange.</p>
+        </index>
+      </div>
+    </intro>
+    <topic name="La Provence">
+      <guides>
+        <guide href="/topic/history" name="P"/>
+      </guides>
+      <info>
+        <img src="/voyages/Provence/PACA.jpg"/>
+      </info>
+      <desc style="width: 600px; margin: 8px 20px">
+        <p>La Provence n'a plus aujourd'hui d'existence juridique (politique, administrative) propre, seule l'initiale de la grande région sud-est (PACA) nous la rappelle. Cependant les quatre <span style="color: purple; border: gray 1px solid; padding: 0 2px; font-size: 8pt">DEPARTEMENTS</span> occidentaux correspondent approximativement à son périmètre historique.</p>
+        <p>Le <em>pays provençal</em>, au sens culturel et touristique, peut inclure la Drôme méridionale, au sud de Montélimar, qui comprend les territoires du Tricastin et des Baronnies, au versant Nord du Mont Ventoux.</p>
+        <P>L'<anchor target="P">histoire</anchor> de la Provence fut riche et mouvementée.</P>
+      </desc>
+    </topic>
+    <topic name="La Durance">
+      <guides>
+        <guide href="/topic/Durance" name="A1"/>
+      </guides>
+      <desc style="margin-bottom: 140px">
+        <div style="width: 640px; margin: 20px">
+          <p>La <anchor target="A1">Durance</anchor> est le deuxième affluent du Rhône en longueur (après la Saône) et le troisième en débit moyen (après l'Isére).</p>
+        </div>
+      </desc>
+    </topic>
+    <topic name="Avignon">
+      <guides>
+        <guide href="Avignon/guide.xml" name="B1"/>
+      </guides>
+      <anchors map="Avignon/map.jpg">
+        <anchor top="100" left="190" width="60" target="B1"/>
+      </anchors>
+      <desc>B is a region...</desc>
+    </topic>
+    <topic name="Le Lubéron">
+      <guides>
+        <guide href="/topic/Luberon" name="C1"/>
+      </guides>
+      <info>
+        <img src="Luberon/map.png"/>
+      </info>
+      <desc style="margin: 20px">
+        <anchor target="C1">Overview</anchor>
+      </desc>
+    </topic>
+    <topic name="Le vignoble">
+      <guides>
+        <guide href="/topic/vignoble" name="D1"/>
+      </guides>
+      <info>
+        <img src="vignoble/map.jpg" height="640"/>
+      </info>
+      <desc style="width: 680px; margin: 8px 20px">
+        <p>Sur les coteaux de l'Aigues et de l'Ouvèze les <anchor target="D1">vignobles</anchor> des côtes du Rhône méridionales bénéficient d'un terroir et d'un climat exceptionnel.</p>
+        <p>Le plus fameux d'entre eux, Chateauneuf du Pape, se situe cependant à l'ouest ce cette carte, sur la rive du Rhône.</p>
+        <p>Les cépages cultivés sont principalement la grenache, la syrah et le mourvèdre pour les vins rouges, la grenache blanche, la marsanne et la roussanne pour les vins blancs. De nombreux cépages secondaires sont souvent ajoutés et confèrent leur typicité aux différents crus. Citons notamment par exemple la clairette, le bourboulenc, le picpoul, le cinsault ou le carignan.</p>
+        <p>Rappelons que le vignoble considéré ici représente le secteur sud-est du vaste ensemble des côtes du Rhône. Le secteur septentrional est non moins fameux pour les crus des domaines de la rive droite (Saint-Joseph, Côte-Rôtie, Condrieu) et gauche (Crozes/Tain-Hermitage), tandis que la rive droite du secteur sud comprend Cornas, Tavel et Lirac. </p>
+      </desc>
+    </topic>
+  </topics>
+  <views>
+    <view name="detail" width="1200" height="860" default="footer.html"/>
+  </views>
+</guide>

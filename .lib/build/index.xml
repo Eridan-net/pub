@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<index title="voyages" urn="urn:eridan.net:voyages">
+  <heading>
+    <home id="home">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 512 512" width="32" height="32">
+        <g fill="gray">
+          <path d="M480,74  H32 c-18,0-32,14.327-32,32 s14.327,32,32,32 h448 c18,0,32-14.327,32-32 S497.673,74, 480,74z"/>
+          <path d="M480,224 H32 c-18,0-32,14.327-32,32 s14.327,32,32,32 h448 c18,0,32-14.327,32-32 S497.673,224,480,224z"/>
+          <path d="M480,374 H32 c-18,0-32,14.327-32,32 s14.327,32,32,32 h448 c18,0,32-14.327,32-32 S497.673,374,480,374z"/>
+        </g>
+      </svg>
+    </home></heading>
+  <maps>
+  <map title="map" href="carte-des-regions-et-departements-france.jpg">
+  <label>Voyages</label>
+<spot width="600" />
+  <layer>
+    <svg id="svg" width="620" height="600" viewbox="0 0 620 600"/>
+    <intro>
+      <text x="40" y="16">Autour de la France - suivez le guide.</text>
+      <location x="260" y="13" radius="12"/>
+    </intro>
+    <area width="80" height="50">
+      <location x="480" y="100" radius="26"/>
+      <target href="/pub/Luxembourg%202022" dx="0" dy="20">Luxembourg</target>
+      <target route="static" href="/voyages/Luxembourg%202022/Trier/doc.html" dx="-60" dy="20">Trier</target>
+    </area>
+    <area width="80" height="50">
+      <location x="546" y="144" radius="26"/>
+      <target href="/pub/Pfalz%202023" dx="-10" dy="20">Rheiner Pfalz</target>
+      <target href="/pub/Alsace-Vosges" dx="-90" dy="20">Vosges du Nord</target>
+    </area>
+    <area width="100" height="30">
+      <location x="164" y="184" radius="15"/>
+      <target href="/pub/Bretagne">St Malo, St Michel</target>
+      <tspan dx="0" dy="0">St Malo</tspan>
+      <tspan dy="12" dx="-4">St Michel</tspan>
+    </area>
+    <area width="100" height="30">
+      <location x="260" y="130" radius="26"/>
+      <target href="/pub/Normandie 2021" dx="16" dy="20">Normandie</target>
+    </area>
+    <area width="100" height="30">
+      <location x="390" y="100" radius="26"/>
+      <target dx="16" dy="20">Thiérache</target>
+    </area>
+    <area width="100" height="30">
+      <location x="500" y="320" radius="16"/>
+      <target href="/pub/Lemanus" dx="20" dy="20">Lemanus</target>
+    </area>
+    <area width="100" height="30">
+      <location x="460" y="465" radius="26"/>
+      <target href="/pub/Vaucluse" dx="16" dy="20">Vaucluse</target>
+    </area></layer>
+  </map>
+    <map title="H-FR" href="hydrographie FR.png"><label>Réseau hydrographique français</label><layer></layer>
+      <info class="tab"><spot height="720"/>
+        <desc style="width: 600px; margin-top: 60px">
+          <p>On identifie en France quatre <bassin>bassins fluviaux</bassin> intérieurs principaux:</p>
+          <ul>
+            <li><em2>Loire / Allier</em2></li>
+            <li><em2>Rhône / Saône</em2></li>
+            <li><em2>Seine / Yonne</em2></li>
+            <li><em2>Garonne / Dordogne</em2></li>
+          </ul>
+          <p>Deux autres bassins importants traversent les pays voisins: 
+le <em>Rhin</em> délimite la frontière allemande et se jette dans la Mer du Nord aux Pays-Bas, où débouche également la <em>Meuse</em> via la Belgique.
+</p>
+          <p>
+La <em>Loire</em> est le plus grand (en longueur) fleuve intérieur français, suivi par la <em>Seine</em> et la <em>Dordogne</em>. 
+La <em>Garonne</em> prend sa source dans les Pyrénées espagnoles, et le <em>Rhône</em> dans les Alpes suisses.</p>
+          <p>De nombreux fleuves secondaires, plus courts que les grandes rivières, se jettent sur les côtes maritimes françaises:
+Charente, Vilaine, Aude, Var, Somme, Aa...</p>
+</desc>
+        </info>
+        <desc style="display: block; width: 900px; margin: 20px">
+          <p>Les géographes ont par convention dénommé le fleuve en aval d'un confluent du nom du plus long des affluents. 
+Ainsi par exemple le cours aval de Lyon s'appelle Rhône et le cours aval de Nevers s'appelle Loire, alors qu'ils auraient pu s'appeler respectivement Saône et Allier.</p>
+          <p>Si on s'en tenait au parcours français, la Saône aurait pu l'emporter, mais les géographes ont inclus le parcours suisse du Rhône en aval du lac Léman, qui fait la différence de longueur. 
+          De même, entre la Loire et l'Allier, ainsi qu'entre la Seine et l'Yonne, la différence est très faible.</p>
+<p>Chalon-sur-Saône devrait s'appeler Chalon-sur-Doubs selon le critère de longueur, mais le Doubs parcourt 85km dans le Jura suisse - comprenne qui pourra! 
+Le parcours de cette rivière est étonnant: le haut cours s'écoule du Sud au Nord en traçant approxima-tivement la frontière franco-suisse dans le Jura,
+et s'oriente vers la vallée du Rhin, mais il bifurque à 180° face à un obstacle géoloqique qui le renvoie vers la Saône.</p>
+          <p>Parfois la tradition historique a produit un arbitrage différent:</p>
+          <p>• la Garonne et la Dordogne sont théoriquement deux rivières, d'importance similaire, qui confluent dans le vaste estuaire de la Gironde, à proximité de Bordeaux;</p>
+          <p>• le <em>Gard</em>, affluent du Rhône à Beaucaire, désigne le parcours issu du confluent du Gardon d'Anduze et du Gardon d'Alès.</p>
+      </desc>
+    </map>
+    <map title="H-BE" href="hydro-BE.jpg"><label>Réseau hydrographique belge</label><layer></layer>
+        <desc>
+          <p>La plupart des cours d'eau irriguant la <b>Belgique</b> coulent depuis la France:</p>
+          </desc>
+          <info class="tab"><spot height="360" />
+          <desc style="width: 720px; margin: 24px 8px 0 0"><p>
+Le petit fleuve <em>Yser</em> débouche dans la Manche à Nieuport. Il est devenu célèbre pour son rôle stratégique dans la résistance belge à l'invasion allemande en 1914-18.
+</p>
+          <p>Le réseau principal est partagé en deux bassins: <em2>Escaut / Lys</em2> et <em2>Sambre / Meuse</em2>, soit un bassin flamand et un bassin wallon,
+qui présentent une analogie remarquable:
+</p>
+          <table id="be" border="1" style="margin: 12px">
+            <tr>
+              <td class="src">Pas-de-Calais</td>
+              <td class="rio" width="80">Lys</td>
+              <th rowspan="2">Gand</th>
+              <td class="rio top">⏄ Dendre</td>
+              <th rowspan="2">Antwerp</th>
+              <td class="rio" rowspan="4" style="font: 9pt arial">Mer du Nord</td>
+            </tr>
+            <tr>
+              <td class="src" rowspan="2">Cambresis</td>
+              <td class="rio">Escaut</td>
+              <td class="rio bottom">⏄ Senne ⏄ Dyle</td>
+            </tr>
+            <tr>
+              <td class="rio">Sambre</td>
+              <th rowspan="2">Namur</th>
+              <td class="rio top">⏄ Ourthe</td>
+              <th rowspan="2">Liège</th>
+            </tr>
+            <tr>
+              <td class="src">Ardennes</td>
+              <td class="rio">Meuse</td>
+              <td class="rio bottom">⏄ Amblève ⏄ Vesdre</td>
+            </tr>
+          </table>
+          <p>La scission des deux bassins fut provoquée par le soulèvement du plateau de Hesbaye au Mésozoïque (200 Ma environ, époque des dinosaures).</p>
+          <p>Il provoqua notamment le basculement des rivières de Campine qui débouchent dans l'Escaut: Nèthe, Gette, Demer.</p>
+        </desc>
+        </info>
+        <desc style="display: block; width: 900px; margin: 20px">
+          <p>Les principaux affluents belges de la Meuse en amont de Namur sont la <em>Semois</em> et la <em>Lesse</em> (rive droite) et le <em>Viroin</em> (rive gauche).<br/>
+La Semois et le Viroin trouvent leur confluent en France, dans la "trouée" de Givet.</p>
+          <p>Ces cas particuliers mis à part, il existe une seule et unique rivière française qui prend sa source en Belgique: l'<em>Oise</em>. 
+Cette source se situe à proximité de Chimay, dans la Thiérache belge, sur le même plateau où naissent les Eaux blanche et noire qui alimentent le Viroin.</p>
+          <p>L'Oise se jette dans la Seine en aval de Paris après avoir traversé notamment Guise, Noyon et Compiègne.</p>
+      </desc>
+    </map>
+  </maps>
+  <view name="data" src="footer.html"/>
+</index>

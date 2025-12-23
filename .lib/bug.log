@@ -1,0 +1,17 @@
+SaxonJS2.rt.js:781 Uncaught (in promise) TypeError: H.replace is not a function
+    at Object.parseXmlFromString (SaxonJS2.rt.js:781:182)
+    at p (SaxonJS2.rt.js:1093:75)
+    at Object.transform (SaxonJS2.rt.js:1112:97)
+    at doc.html:12:22
+parseXmlFromString @ SaxonJS2.rt.js:781
+p @ SaxonJS2.rt.js:1093
+transform @ SaxonJS2.rt.js:1112
+(anonymous) @ doc.html:12
+Promise.then (async)
+transformText @ doc.html:17
+(anonymous) @ doc.html:6
+Promise.then (async)
+load @ doc.html:6
+window.onload @ doc.html:26
+load (async)
+(anonymous) @ doc.html:26
