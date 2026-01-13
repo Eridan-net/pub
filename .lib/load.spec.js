@@ -6,21 +6,20 @@ lib: [
 	    fetch(spec.doc)
 		.then(f => f.text())
 		.then(t => transformText(t, spec))
-		.then(doc => replace(doc))
         }`
 	},
     { fn: "transformText"
     , args: ["doc", "spec"]
-    , body: `{ return
+    , body: `{
     	fetch(spec.lib+'/'+spec.sef, { mode: 'cors' })
 		.then(f => f.text())
 		.then(t => SaxonJS.transform( 
 			{ sourceText: doc, stylesheetText: t
 			, stylesheetParams: { lib: spec.lib }
 			, destination: 'serialized' }
-			, 'sync')
+			, 'async')
 			)
-		.then(r => r.principalResult)
+		.then(r => replace(r.principalResult))
         }`
 	},
     { fn: "replace"

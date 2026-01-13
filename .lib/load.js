@@ -1,20 +1,19 @@
 
 function loadText(spec) {
-	fetch(spec.src)
+	fetch(spec.doc)
 		.then(f => f.text())
 		.then(t => transformText(t, spec))
-		.then(doc => replace(spec.doc))
 	}
 function transformText(doc, spec) {
-	return fetch(spec.params.lib+'/'+spec.sef, { mode: 'cors' })
+	fetch(spec.lib+'/'+spec.sef, { mode: 'cors' })
 		.then(f => f.text())
 		.then(t => SaxonJS.transform( 
 			{ sourceText: doc, stylesheetText: t
-			, stylesheetParams: spec.params
+			, stylesheetParams: { lib: spec.lib }
 			, destination: 'serialized' }
-			, 'sync')
+			, 'async')
 			)
-		.then(r => r.principalResult)
+		.then(r => replace(r.principalResult))
 	}
 function replace(doc) {
 	document.open("text/html", "replace");
@@ -22,3 +21,9 @@ function replace(doc) {
 	document.close();
 	}
 window.onerror= (er) => { alert(er) }
+/* use case:
+let spec= { doc: 'doc.xml', sef: 'section.sef.json', lib: '/slib'
+//  , lib: "https://github.com/Eridan-net/pub/tree/main/.lib"
+    }
+window_onload= () => loadText(spec)
+*/
