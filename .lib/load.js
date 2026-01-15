@@ -27,3 +27,4 @@ let spec= { doc: 'doc.xml', sef: 'section.sef.json', lib: '/slib'
     }
 window_onload= () => loadText(spec)
 */
+let hello= () => { document.body.append('hello') }
