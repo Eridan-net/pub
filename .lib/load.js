@@ -25,6 +25,7 @@ window.onerror= (er) => { alert(er) }
 let spec= { doc: 'doc.xml', sef: 'section.sef.json', lib: '/slib'
 //  , lib: "https://github.com/Eridan-net/pub/tree/main/.lib"
     }
-window_onload= () => loadText(spec)
+window.onload= () => loadText(spec)
 */
 let hello= () => { document.body.append('hello') }
+
